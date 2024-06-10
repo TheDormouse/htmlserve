@@ -88,7 +88,7 @@
 
         // Load the audio file
         async function loadAudio() {
-            const response = await fetch('/wonkywalk.wav');
+            const response = await fetch('/htmlserve/wonkywalk.wav');
             const arrayBuffer = await response.arrayBuffer();
             audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
